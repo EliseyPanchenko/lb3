@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<h1> Лабораторная №3</h1>
+		<h2>Панченко Елисей КИУКИ-20-4, вариант 5</h2>
+        <style>
+		h1, h2{
+			text-align:center
+		}
+            .grid {
+                background-color: #5F9EA0;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 20px;
+                grid-row-gap: 5px;
+                grid-template-columns: 100px 200px auto;
+            }
+
+            .grid-item {
+                background-color: white;
+                font-size: 20px;
+                padding: 10px;
+                text-align: center;
+            }
+			.out{
+			  background-color: #5F9EA0;
+			  font-size: 20px;
+			}
+				table {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		text-align: left;
+		border-collapse: separate;
+		border-spacing: 5px;
+		background: #5F9EA0;
+		color: #656665;
+		order: 16px solid #ECE9E0;
+		border-radius: 20px;
+		}
+		tr {
+		font-size: 18px;
+		padding: 10px;
+		}
+		td {
+		background: #F5D7BF;
+		border-radius: 20px;
+		padding: 10px;
+		}
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+		<p>Запишите ФИО студента</p><input type = "text" id="name"><br>
+            <p>Литература</p><input type = "text" id="griditem1"><br>
+			 <p>Математика</p><input type = "text" id="griditem2"><br>
+			  <p>Английский</p><input type = "text" id="griditem3"><br>
+			   <p>История</p><input type = "text" id="griditem4"><br>
+			    <p>Физика</p><input type = "text" id="griditem5"><br>
+				 <button>Успеваемость студента</button>
+				 
+				</div>
+				
+				
+				<table>
+		<tbody id="tabl">
+		<tr><td>ФИО:</td></tr>
+		</tbody>
+		
+			</table>
+	
+	<div>Отличник:</div><div id = "Grade-1" value=""></div><br>
+	<div>Хорошистов:</div><div id = "Grade-2" value=""></div><br>
+	<div>Неуспевающий:</div><div id = "Grade-3" value=""></div><br>
+    </body>
+	<script src="javas.js"></script>
+</html>
